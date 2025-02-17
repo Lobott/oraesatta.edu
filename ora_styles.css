@@ -1,0 +1,130 @@
+/* @import url('https://fonts.cdnfonts.com/css/ds-digital'); */
+@import url('https://fonts.cdnfonts.com/css/salernomi-j');
+                
+* {
+    font-family: 'Salernomi J', sans-serif;
+}
+
+body {
+    background-color: #010101;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+h1 {
+    color: #f3f3f3;
+}
+
+#giorno {
+    font-size: 2rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 15%;
+}
+
+#ora-container {
+    /* font-family: 'DS-Digital', sans-serif; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f3f3f3;
+}
+
+#ora {
+    font-size: 9rem;
+}
+
+#sun {
+    color: #f3f3f3;
+    border: 1px solid #f3f3f3;
+    border-radius: 50%;
+    padding: .5rem;
+    cursor: pointer;
+    position: absolute;
+    bottom: 0;
+}
+
+#sun:hover {
+    color: #010101;
+    background-color: #f3f3f3;
+}
+
+#moon {
+    color: #010101;
+    border: 1px solid #010101;
+    border-radius: 50%;
+    padding: .5rem;
+    cursor: pointer;
+    position: absolute;
+    bottom: 0;
+}
+
+#moon:hover {
+    color: #f3f3f3;
+    background-color: #010101;
+}
+
+.hidden {
+    display: none;
+}
+/* timer */
+.countdown-container {
+    position: absolute;
+    top: 0;
+    transform: translateY(72vh);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.countdown-text {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f3f3f3;
+}
+
+#nuovo-timer {
+    height: 50px;
+    width: 150px;
+    font-size: 1.5rem;
+    border: 1px solid #f3f3f3;
+    background-color: transparent;
+    color: #f3f3f3;
+    position: absolute;
+    top: 0;
+    cursor: pointer;
+}
+
+/*------------------------ MOBILE ------------------------*/
+@media screen and (max-width: 768px) {
+    #giorno {
+        font-size: 1.7rem;
+        top: 10%;
+    }
+    #ora {
+        font-size: 6rem;
+        transform: translateY(-50%);
+    }
+    .countdown-container {
+        transform: translateY(390px);
+        font-size: 1.3rem;
+        text-align: center;
+        width: 90%;
+    }
+
+    #nuovo-timer {
+        height: 30px;
+        font-size: 1rem;
+    }
+}

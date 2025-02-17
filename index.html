@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>⏰ oraesatta.edu</title>
+    <link rel="stylesheet" href="index_styles.css">
+</head>
+<body>
+    <h1 id="title">oraesatta<span style="color: #880808">.</span>edu</h1>
+    <p id="istruzioni">Come si usa?</p>
+    <form id="form-esonero">
+        <label for="tempo-esonero">Esonero</label>
+        <input type="text" id="tempo-esonero" placeholder="Inserisci il tempo per l'esonero (hh:mm)...">
+        <button type="button" id="btn-esonero">Imposta esonero</button>
+    </form>
+    <p id="mostra-tempo-esonero">Tempo per l'esonero non impostato</p>
+
+    <form id="form-esame">
+        <label for="tempo-esame">Esame</label>
+        <input type="text" id="tempo-esame" placeholder="Inserisci il tempo per l'esame (hh:mm)...">
+        <button type="button" id="btn-esame">Imposta esame</button>
+    </form>
+    <p id="mostra-tempo-esame">Tempo per l'esame non impostato</p>
+
+    <button id="procedi">Procedi</button>   <!--procedi compare solo dopo aver cliccato uno dei due imposta-->
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
